@@ -26,9 +26,9 @@ function myFunction3(server, id, secret, title, owner) {
   }
 
 let page = 1;
-
+let pageNr = 1;
 function callFlickr() {
-for (let i = 1; i <= page; i++) {
+for (let i = pageNr; i <= page; i++) {
     //Getting the list info page by page         //how many items to take from list, max is 100 from one page
         fetch(`https://www.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=f1821935193ec718c8a65eaac9b16cfb&extras=owner_name&per_page=100&page=${i}&format=json&nojsoncallback=1`)
         .then((response) => {
@@ -64,6 +64,7 @@ for (let i = 1; i <= page; i++) {
     
     }
     page++;
+    pageNr++
 }
 
 callFlickr();
