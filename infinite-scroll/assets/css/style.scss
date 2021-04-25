@@ -114,22 +114,22 @@ body {
 	box-shadow: 3px 3px #ddd4dd;
   }
 
+
+
+
 	@media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 600px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
-	.container {
-		padding-left: 20px;
-	
-	}
+
 	
 	.container .img_div {
-		width: calc(40% - 20px);
+		width: calc(40% - 10px);
 		margin-top: 20px;
 		border-radius: 10px;
 		height: 125px;
-		margin-left: 35px;
+		margin-left: 20px;
 		position: relative;	
 	
 		.image__title {
